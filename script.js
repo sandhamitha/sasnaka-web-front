@@ -257,6 +257,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const dotsContainer = document.querySelector('.slide-dots');
     const prevButton = document.querySelector('.prev-slide');
     const nextButton = document.querySelector('.next-slide');
+    if (!slides.length || !dotsContainer || !prevButton || !nextButton) return;
+
     let currentSlide = 0;
     let slideInterval;
     let isTransitioning = false;
