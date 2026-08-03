@@ -321,7 +321,8 @@ section {
 
 .footer-links-section {
     display: flex;
-    gap: 120px;
+    flex-wrap: wrap;
+    gap: 60px 120px;
 }
 
 .footer-section {
