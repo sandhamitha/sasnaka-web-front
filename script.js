@@ -42,6 +42,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Close mobile menu when clicking outside
+    if (mobileMenuBtn && navLinks) {
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+            }
+        });
+    }
+
     // Smooth Scroll for Navigation Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -354,14 +364,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Start the slideshow
     startSlideshow();
-});
-
-// Close mobile menu when clicking outside
-document.addEventListener('click', (e) => {
-    if (!navLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-        navLinks.classList.remove('active');
-        mobileMenuBtn.classList.remove('active');
-    }
 });
 
 // Contact Form Validation
