@@ -1,0 +1,413 @@
+/* Volunteer Page Specific Styles */
+
+/* Volunteer Hero Section */
+.volunteer-hero {
+    background: linear-gradient(180deg, #14255A 0%, #0066cc 100%);
+    padding: 100px 20px;
+    text-align: center;
+    margin: 120px 50px 50px 40px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(20, 37, 90, 0.1);
+}
+
+.volunteer-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('pattern.png');
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.volunteer-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.volunteer-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    animation: fadeInDown 0.8s ease;
+    color: white;
+}
+
+.volunteer-hero .lead-text {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-bottom: 32px;
+    animation: fadeInUp 0.8s ease;
+}
+
+/* Why Volunteer Section */
+.why-volunteer {
+    padding: 80px 0;
+    background: white;
+}
+
+.section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 102, 204, 0.1);
+    color: #0066cc;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.section-badge i {
+    font-size: 16px;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.section-header h2 {
+    color: #14255A;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.section-header p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.benefit-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(20, 37, 90, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px);
+}
+
+.benefit-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(180deg, #14255A 0%, #0066cc 100%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+}
+
+.benefit-icon i {
+    font-size: 24px;
+    color: white;
+}
+
+.benefit-card h3 {
+    color: #14255A;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.benefit-card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Volunteer Opportunities Section */
+.volunteer-opportunities {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.opportunities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    padding: 0 20px;
+}
+
+.opportunity-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 24px rgba(20, 37, 90, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.opportunity-card:hover {
+    transform: translateY(-8px);
+}
+
+.opportunity-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(180deg, #14255A 0%, #0066cc 100%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.opportunity-icon i {
+    font-size: 24px;
+    color: white;
+}
+
+.opportunity-card h3 {
+    color: #14255A;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.opportunity-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.opportunity-card ul li {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.opportunity-card ul li:last-child {
+    border-bottom: none;
+}
+
+/* Volunteer Form Section */
+.volunteer-form-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(20, 37, 90, 0.1);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-header h2 {
+    color: #14255A;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-header p {
+    color: #666;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    color: #14255A;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.volunteer-form .btn-primary {
+    background: linear-gradient(180deg, #0066cc 0%, #14255A 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.volunteer-form .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(20, 37, 90, 0.2);
+}
+
+.btn-outline {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 24px;
+    border: 2px solid #0066cc;
+    border-radius: 8px;
+    color: #0066cc;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.btn-outline:hover {
+    background: #0066cc;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Animation Classes */
+.animate-fadeInUp {
+    animation: fadeInUp 0.8s ease;
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .volunteer-hero {
+        padding: 100px 20px;
+        margin: 100px 30px 30px 30px;
+    }
+
+    .volunteer-hero h1 {
+        font-size: 40px;
+    }
+
+    .section-header h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .volunteer-hero {
+        padding: 80px 20px;
+        margin: 90px 20px 20px 20px;
+    }
+
+    .volunteer-hero h1 {
+        font-size: 36px;
+    }
+
+    .volunteer-hero .lead-text {
+        font-size: 16px;
+    }
+
+    .opportunities-grid {
+        gap: 24px;
+    }
+
+    .form-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .volunteer-hero {
+        padding: 60px 15px;
+        margin: 80px 15px 15px 15px;
+        border-radius: 16px;
+    }
+
+    .volunteer-hero h1 {
+        font-size: 32px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    .opportunity-content {
+        padding: 24px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+} 
